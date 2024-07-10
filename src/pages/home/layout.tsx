@@ -66,8 +66,8 @@ export function Component() {
 
 
     return <>
-        <div className="bg-lime-600 relative">
-            <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-40 shadow-inner shadow-black pointer-events-none" />
+        <div className="bg-violet-400 relative">
+            <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-50 shadow-inner shadow-black pointer-events-none" />
             <div className="container m-auto flex align-middle min-h-12 p-2 md:min-h-24 md:p-4">
                 <h1 className="text-3xl md:text-6xl">
                     {displayedTitle ?? <span>&nbsp;</span>}{"_"}
