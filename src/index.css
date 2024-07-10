@@ -1,3 +1,37 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: 'The Led Display St';
+    src: url('/assets/fonts/TheLedDisplaySt.woff2') format('woff2'),
+        url('/assets/fonts/TheLedDisplaySt.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+h1 {
+    font-family: 'The Led Display St', sans-serif;
+}
+
+nav {
+    background-image: url('/assets/images/Leather.jpg');
+    background-size: auto 100%;
+}
+
+nav a {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+    background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
+}
+nav a:hover {
+    background-image: radial-gradient(rgb(255 255 255 / 20%), transparent), linear-gradient(to bottom, var(--tw-gradient-stops));
+    background-repeat: no-repeat;
+    background-size: 4rem 2rem, 100% 100%;
+    background-position: calc(var(--mouse-x) - 2rem) calc(var(--mouse-y) - 1rem), 0 0;
+}
